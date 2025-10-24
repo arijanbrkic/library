@@ -3,9 +3,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e97e7e;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header {
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,4 +20,15 @@ header {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
