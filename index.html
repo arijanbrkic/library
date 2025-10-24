@@ -24,29 +24,40 @@
     </nav>
 
     <main class="main container">
-        <form id="bookForm">
-            <div class="form-group">
-                <label for="title">Book Title:</label>
-                <input type="text" id="title" placeholder="Book Title" required>
+        <section class="form-section">
+            <form id="bookForm">
+                <div class="form-group">
+                    <label for="title">Book Title:</label>
+                    <input type="text" id="title" placeholder="Book Title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" placeholder="Author" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="pages">Number of Pages:</label>
+                    <input type="number" id="pages" placeholder="Number of Pages" min="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="read">Have you read this book?</label>
+                    <input type="checkbox" id="read">
+                </div>
+                
+                <button id="addBookBtn" type="submit">Add Book</button>
+            </form>
+        </section>
+
+        <section class="books-section">
+            <div class="books-container">
+                <p>Book 1</p>
+                <p>Book 2</p>
+                <p>Book 3</p>
+                <p>Book 4</p>
             </div>
-            
-            <div class="form-group">
-                <label for="author">Author:</label>
-                <input type="text" id="author" placeholder="Author" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="pages">Number of Pages:</label>
-                <input type="number" id="pages" placeholder="Number of Pages" min="1" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="read">Have you read this book?</label>
-                <input type="checkbox" id="read">
-            </div>
-            
-            <button id="addBookBtn" type="submit">Add Book</button>
-        </form>
+        </section>
     </main>
 
     <script src="script.js"></script>
